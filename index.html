@@ -5,139 +5,282 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Patua+One&family=Roboto&display=swap");
+    </style>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
       <div class="sidebar">
         <ul>
-          <li>Dashboard</li>
+          <li id="nav-icon-main">
+            <img
+              class="nav-logo"
+              src="./icons/view-dashboard-outline.png"
+              alt="dashboard icon"
+            />
+            Dashboard
+          </li>
         </ul>
         <ul>
-          <li>Home</li>
-          <li>Profile</li>
-          <li>Messages</li>
-          <li>History</li>
-          <li>Tasks</li>
-          <li>Communities</li>
+          <li class="nav-sections">
+            <img class="nav-icon" src="./icons/home.png" alt="icon-home" /> Home
+          </li>
+          <li class="nav-sections">
+            <img
+              class="nav-icon"
+              src="./icons/profile.png"
+              alt="profile"
+            />Profile
+          </li>
+          <li class="nav-sections">
+            <img
+              class="nav-icon"
+              src="./icons/message.png"
+              alt="icon-home"
+            />Messages
+          </li>
+          <li class="nav-sections">
+            <img
+              class="nav-icon"
+              src="./icons/history.png"
+              alt="icon-home"
+            />History
+          </li>
+          <li class="nav-sections">
+            <img
+              class="nav-icon"
+              src="./icons/format-list-checks.png"
+              alt="icon-home"
+            />Tasks
+          </li>
+          <li class="nav-sections">
+            <img
+              class="nav-icon"
+              src="./icons/account-group.png"
+              alt="icon-home"
+            />Communities
+          </li>
         </ul>
         <ul>
-          <li>Settings</li>
-          <li>Support</li>
-          <li>Privacy</li>
+          <li class="nav-sections">
+            <img
+              class="nav-icon"
+              src="./icons/cog.png"
+              alt="icon-home"
+            />Settings
+          </li>
+          <li class="nav-sections">
+            <img
+              class="nav-icon"
+              src="./icons/face-agent.png"
+              alt="icon-home"
+            />Support
+          </li>
+          <li class="nav-sections">
+            <img
+              class="nav-icon"
+              src="./icons/shield-lock.png"
+              alt="icon-home"
+            />Privacy
+          </li>
         </ul>
       </div>
       <div class="header">
-        <div class="searchbox">this is the searchbox</div>
-        <div class="notification-area">this is the notification-area</div>
-        <div class="profile">this is the profile area</div>
+        <div class="searchbox">
+          <img src="./icons/magnify.png" width="30px" alt="searchbox" />
+          <input id="searchinput" type="text" />
+        </div>
+        <div class="notification-area">
+          <img src="./icons/bell-ring.png" width="25px" alt="searchbox" />
+          <a
+            href="https://www.freepik.com/free-vector/multiracial-people-avatars_7085153.htm#query=avatar&position=6&from_view=search&track=sph"
+            ><div class="avatar-small" id="avatar2"></div
+          ></a>
+          <div class="name">Jardel Justice</div>
+        </div>
+        <div class="profile">
+          <div>
+            <a
+              href="https://www.freepik.com/free-vector/multiracial-people-avatars_7085153.htm#query=avatar&position=6&from_view=search&track=sph"
+              ><div class="avatar-large" id="avatar2"></div
+            ></a>
+          </div>
+          <div class="greeting">
+            <div id="greeting-small">Hi there,</div>
+            <div class="name">Jardel Justice (@JaJustice)</div>
+          </div>
+        </div>
         <div class="profile-actions">
-          <button>New</button>
-          <button>Upload</button>
-          <button>Save</button>
+          <button class="button-85" role="button">New</button>
+          <button class="button" role="button">Upload</button>
+          <button class="button" role="button">Share</button>
         </div>
       </div>
       <div class="main">
+        <h2 class="main-titles">Projects</h2>
         <div class="projects">
           <div class="project-card">
-            <p class="title">Article Title</p>
+            <p class="project-title">Project Title</p>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud...
             </p>
+            <div class="project-actions">
+              <img src="./icons/message-plus.png" alt="" width="25px" />
+              <img src="./icons/star-plus.png" alt="" width="25px" />
+              <img src="./icons/share-variant.png" alt="" width="25px" />
+            </div>
           </div>
           <div class="project-card">
-            <p class="title">Article Title</p>
+            <p class="project-title">Project Title</p>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud...
             </p>
+            <div class="project-actions">
+              <img src="./icons/message-plus.png" alt="" width="25px" />
+              <img src="./icons/star-plus.png" alt="" width="25px" />
+              <img src="./icons/share-variant.png" alt="" width="25px" />
+            </div>
           </div>
           <div class="project-card">
-            <p class="title">Article Title</p>
+            <p class="project-title">Project Title</p>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud...
             </p>
+            <div class="project-actions">
+              <img src="./icons/message-plus.png" alt="" width="25px" />
+              <img src="./icons/star-plus.png" alt="" width="25px" />
+              <img src="./icons/share-variant.png" alt="" width="25px" />
+            </div>
           </div>
           <div class="project-card">
-            <p class="title">Article Title</p>
+            <p class="project-title">Project Title</p>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud...
             </p>
+            <div class="project-actions">
+              <img src="./icons/message-plus.png" alt="" width="25px" />
+              <img src="./icons/star-plus.png" alt="" width="25px" />
+              <img src="./icons/share-variant.png" alt="" width="25px" />
+            </div>
           </div>
           <div class="project-card">
-            <p class="title">Article Title</p>
+            <p class="project-title">Project Title</p>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud...
             </p>
+            <div class="project-actions">
+              <img src="./icons/message-plus.png" alt="" width="25px" />
+              <img src="./icons/star-plus.png" alt="" width="25px" />
+              <img src="./icons/share-variant.png" alt="" width="25px" />
+            </div>
+          </div>
+          <div class="project-card">
+            <p class="project-title">Project Title</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud...
+            </p>
+            <div class="project-actions">
+              <img src="./icons/message-plus.png" alt="" width="25px" />
+              <img src="./icons/star-plus.png" alt="" width="25px" />
+              <img src="./icons/share-variant.png" alt="" width="25px" />
+            </div>
+          </div>
+          <div class="project-card">
+            <p class="project-title">Project Title</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud...
+            </p>
+            <div class="project-actions">
+              <img src="./icons/message-plus.png" alt="" width="25px" />
+              <img src="./icons/star-plus.png" alt="" width="25px" />
+              <img src="./icons/share-variant.png" alt="" width="25px" />
+            </div>
+          </div>
+          <div class="project-card">
+            <p class="project-title">Project Title</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud...
+            </p>
+            <div class="project-actions">
+              <img src="./icons/message-plus.png" alt="" width="25px" />
+              <img src="./icons/star-plus.png" alt="" width="25px" />
+              <img src="./icons/share-variant.png" alt="" width="25px" />
+            </div>
           </div>
         </div>
-        <div class="announcements">
-          <h2>Announcements</h2>
-          <div class="ann-card">
-            <p class="title">Article Title</p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud...
-            </p>
+        <div class="right-block">
+          <h2 class="main-titles">Announcements</h2>
+          <div class="announcements">
+            <div class="ann-card">
+              <p class="ann-title">Article Title</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                enim ad minim veniam, quis nostrud...
+              </p>
+            </div>
+            <div class="ann-card">
+              <p class="ann-title">Article Title</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                enim ad minim veniam, quis nostrud...
+              </p>
+            </div>
+            <div class="ann-card">
+              <p class="ann-title">Article Title</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                enim ad minim veniam, quis nostrud...
+              </p>
+            </div>
           </div>
-          <div class="ann-card">
-            <p class="title">Article Title</p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud...
-            </p>
-          </div>
-          <div class="ann-card">
-            <p class="title">Article Title</p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud...
-            </p>
-          </div>
-        </div>
-        <div class="Trending">
-          <h2>Trending</h2>
-          <div class="trending-card">
-            <p class="title">Article Title</p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud...
-            </p>
-          </div>
-          <div class="trending-card">
-            <p class="title">Article Title</p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud...
-            </p>
-          </div>
-          <div class="trending-card">
-            <p class="title">Article Title</p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud...
-            </p>
+          <div class="trending">
+            <h2 class="main-titles" id="trending">Trending</h2>
+            <div class="trending-card">
+              <a
+                href="https://www.freepik.com/free-vector/multiracial-people-avatars_7085153.htm#query=avatar&position=6&from_view=search&track=sph"
+                ><div class="avatar-small" id="avatar1"></div
+              ></a>
+              <div class="name">Wilf Houghton</div>
+            </div>
+            <div class="trending-card">
+              <a
+                href="https://www.freepik.com/free-vector/multiracial-people-avatars_7085153.htm#query=avatar&position=6&from_view=search&track=sph"
+                ><div class="avatar-small" id="avatar3"></div
+              ></a>
+              <div class="name">Keely Velasquez</div>
+            </div>
+            <div class="trending-card">
+              <a
+                href="https://www.freepik.com/free-vector/multiracial-people-avatars_7085153.htm#query=avatar&position=6&from_view=search&track=sph"
+                ><div class="avatar-small" id="avatar4"></div
+              ></a>
+              <div class="name">Olivia Cain</div>
+            </div>
+            <div class="trending-card" style="opacity: 50%">
+              <a
+                href="https://www.freepik.com/free-vector/multiracial-people-avatars_7085153.htm#query=avatar&position=6&from_view=search&track=sph"
+                >Images by pikisuperstar</a
+              >
+              on Freepik
+            </div>
           </div>
         </div>
       </div>
